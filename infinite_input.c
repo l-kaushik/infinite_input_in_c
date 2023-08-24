@@ -10,7 +10,8 @@ int main()
 
     input_str = (char *)malloc(n * sizeof(char));
 
-    scanf("%s",input_str);
+    fgets(input_str, n, stdin);
     printf("%s",input_str);
+
     return 0;
 }
