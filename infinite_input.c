@@ -19,6 +19,7 @@ int main()
     input_str = (char *)malloc(n * sizeof(char));
     check_null(input_str);
 
+    printf("Enter your input: ");
     fgets(input_str, n, stdin);
 
     // string length checker
@@ -32,7 +33,7 @@ int main()
         fgets(input_str + n / 2 - 1, n / 2 + 1, stdin);
     }
 
-    printf("%s", input_str);
+    printf("\nResult:- %s", input_str);
 
     return 0;
 }
